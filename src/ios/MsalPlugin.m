@@ -215,8 +215,8 @@
             }
             else
             {
-                correlationId = @"UNSET";
-                messageText = [[message componentsSeparatedByString:@"] "] objectAtIndex:1];
+                correlationId = @"NOTSET";
+                messageText = message;
             }
             
             [logEntry setValue:timestamp forKey:@"timestamp"];
